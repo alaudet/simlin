@@ -2,9 +2,9 @@ from setuptools import setup
 
 version = '0.0.1'
 
-setup(name='SIR',
+setup(name='simlin',
       version=version,
-      description='Simple Image Resizer for Linux',
+      description='Simple Image Manipulator for Linux',
       long_description=open("./README.md", "r").read(),
       classifiers=[
           "Development Status :: 1 - Planning",
@@ -18,10 +18,10 @@ setup(name='SIR',
           ],
       author='Al Audet',
       author_email='alaudet@linuxnorth.org',
-      url='https://www.linuxnorth.org/sir/',
-      download_url='https://github.com/alaudet/sir/releases',
+      url='https://www.linuxnorth.org/simlin/',
+      download_url='https://github.com/alaudet/simlin/releases',
       license='MIT License',
-      packages=['sir'],
-      scripts=['bin/sir.py'],
-      install_requires=['PIL']
+      packages=['simlin'],
+      scripts=['bin/simlin'],
+      install_requires=['pillow']
 )
