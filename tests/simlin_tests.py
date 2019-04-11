@@ -13,4 +13,3 @@ def test_list():
     '''test that a list is returned'''
     l = list_images()
     assert type(l) == list
-

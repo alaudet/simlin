@@ -24,4 +24,4 @@ setup(name='simlin',
       packages=['simlin'],
       scripts=['bin/simlin'],
       install_requires=['pillow']
-)
+      )
