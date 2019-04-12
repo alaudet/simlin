@@ -7,8 +7,9 @@ from PIL import Image
 
 def size_parameters():
     '''Determine new size of files'''
+
     file_sizes = {
-               'L': '2376',
+               'L': '2376', 'l': '2376',
                'M': '1024',
                'S': '800',
                'T': '250',

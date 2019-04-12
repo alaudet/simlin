@@ -1,5 +1,5 @@
 from nose.tools import *
-from simlin.simlin import * 
+from simlin.simlin import *
 
 '''
 def setup():
@@ -8,6 +8,7 @@ def setup():
 def teardown():
     print "TEAR DOWN!"
 '''
+
 
 def test_list():
     '''test that a list is returned'''

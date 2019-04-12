@@ -21,10 +21,7 @@ New images are created in the resized subdirectory.
 Install
 =======
 
-clone repository
-from root of repository;
-
-sudo pip3 install .
+sudo pip3 install https://github.com/alaudet/simlin/archive/master.zip
 
 
 Uninstall
