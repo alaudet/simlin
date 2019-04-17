@@ -1,7 +1,9 @@
 SIMLIN - Simple Image Manipulator for Linux
 ==========================
 
-Version 0.0.2
+Version 0.0.2b
+
+This project is simply for learning.  Do not use it for anything important as it could have unintended consequences.
 
 SIMLIN is a Simple Image Manipulator for Linux.  This utility does only one thing at the moment.  It takes images in the current working folder and resizes them in the 'resized' subfolder.
 
@@ -25,7 +27,7 @@ Where -r is the new horizontal size and -q is the image quality (0-95)
 Install
 =======
 
-sudo pip3 install https://github.com/alaudet/simlin/archive/master.zip
+sudo pip3 install simlin.
 
 
 Requires

@@ -8,4 +8,3 @@ def setup():
 def teardown():
     print "TEAR DOWN!"
 '''
-

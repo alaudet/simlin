@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 import sys
 import argparse
-from simlin import batch, image_resize
+from simlin import image_resize
 
 
 __license__ = 'MIT'
@@ -60,15 +60,13 @@ def batch():
 
     image_resize.batch_main(size=new_size, quality=new_quality)
 
+
 def main():
     '''Main function directs process to batch or interactive mode'''
     # check sys.argv length
     # if greater then 1 batch()
     # of 1
     if len(sys.argv) > 1:
-        #print("This will batch")
-        #exit(0)
         batch()
     else:
-        # image_resize.single_main()
         image_resize.interactive()
