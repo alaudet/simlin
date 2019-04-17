@@ -10,9 +10,10 @@ def size_parameters():
 
     file_sizes = {
                'L': '2376', 'l': '2376',
-               'M': '1024',
-               'S': '800',
-               'T': '250',
+               'M': '1024', 'm': '1024',
+               'S': '800', 's': '800',
+               'T': '250', 't': '250',
+               'TH': '128', 'th': '128',
                'Th': '128'
                }
 
@@ -20,7 +21,7 @@ def size_parameters():
           (L)arge,
           (M)edium Email,
           (S)mall Web,
-          (T)inu,
+          (T)iny,
           (Th)umbnails,
           (C)ustom Size
           (Q)uit''')
@@ -34,7 +35,7 @@ def size_parameters():
     elif size in file_sizes.keys():
         return file_sizes[size]
     else:
-        print('Try Again')
+        print('Invalid Option, Try Again')
         size_parameters()
 
 
@@ -63,12 +64,18 @@ def make_dest_dir():
     return str(destination_folder)
 
 
-def resize_images(pics, new_size, destination):
+def resize_images(pics, new_size, quality=None):
     '''Resize images and put them in the destination directory'''
     images = pics
+    destination = make_dest_dir()
     i = 1
     numpics = len(images)
-    img_quality = int(input('Select an image quality>: '))
+    if quality is None:
+        img_quality = int(input('Select an image quality>: '))
+    else:
+        img_quality = int(quality)
+
+        # img_quality = quality
     for image in images:
         image_object = Image.open(image)
         new_width = int(new_size)
@@ -89,14 +96,24 @@ def resize_images(pics, new_size, destination):
          )
 
 
-def main():
+def batch_main(size=None, quality=None, file=None, dir=None):
     '''Prepare information for processing'''
 
     flat_list = list_images()
     if len(flat_list) == 0:
         print("No Image Files to Resize in this folder")
         print("Good Bye")
-    else:
-        destination = make_dest_dir()
+    new_size = str(size)
+    # print(type(new_size))
+    resize_images(flat_list, new_size, quality)
+
+
+def interactive():
+    '''Prepare information for processing'''
+
+    flat_list = list_images()
+    if len(flat_list) == 0:
+        print("No Image Files to Resize in this folder")
+        print("Good Bye")
     new_size = size_parameters()
-    resize_images(flat_list, new_size, destination)
+    resize_images(flat_list, new_size)
