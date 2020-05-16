@@ -3,6 +3,8 @@ SIMLIN - Simple Image Manipulator for Linux
 
 Version 0.0.2b
 
+![Simlin Demo](https://www.linuxnorth.org/simlin/output.gif)
+
 This project is simply for learning.  Do not use it for anything important as it could have unintended consequences.
 
 SIMLIN is a Simple Image Manipulator for Linux.  This utility does only one thing at the moment.  It takes images in the current working folder and resizes them in the 'resized' subfolder.
