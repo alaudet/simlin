@@ -1,5 +1,4 @@
-SIMLIN - Simple Image Manipulator for Linux
-==========================
+# SIMLIN - Simple Image Manipulator for Linux
 
 Version 0.0.2b
 
@@ -11,8 +10,7 @@ SIMLIN is a Simple Image Manipulator for Linux.  This utility does only one thin
 
 The end goal is to have a fully functional command line utility that will do various scriptable batch image manipulations.
 
-Usage
-======
+## Usage
 
 Resize can be completed in batch or interactive mode
 
@@ -26,15 +24,12 @@ Where -r is the new horizontal size and -q is the image quality (0-95)
     simlin
 
 
-Install
-=======
+## Install
 
 sudo pip3 install simlin.
 
 
-Requires
-========
+## Requires
 
-Python3
-
-Pillow (latest version)
+* Python3
+* Pillow (latest version)
