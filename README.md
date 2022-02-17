@@ -1,6 +1,6 @@
 # SIMLIN - Simple Image Manipulator for Linux
 
-Version 0.0.2b
+Version 0.0.4b
 
 ![Simlin Demo](https://www.linuxnorth.org/simlin/output.gif)
 
