@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = '0.0.3b'
+version = '0.0.4b'
 
 setup(name='simlin',
       version=version,
