@@ -42,8 +42,8 @@ def size_parameters():
 def list_images():
     '''Walk through the current folder and return a list of filenames
     that are images'''
-    image_types = ('*.jpg', '*.JPG', '*.JPEG', '*.jpeg', '*.png', '*.bmp',
-                   '*.BMP', '*.gif', '*.GIF'
+    image_types = ('*.jpg', '*.JPG', '*.JPEG', '*.jpeg', '*.png', '*.PNG',
+                   '*.bmp','*.BMP', '*.gif', '*.GIF'
                    )
     image_list = []
     for file in image_types:

@@ -1,5 +1,6 @@
 Changelog
 =========
 
+v0.0.5 - removed cmd line options until they are ready
 v0.0.4 - make simlin a wheel package
-v0.0.1 - puts resized images in the resized subfolder.
+v0.0.1 - puts resized images in the resized subfolder

@@ -18,6 +18,7 @@ def get_args():
     parser = argparse.ArgumentParser(
         description='Use argparsing to allow better scripting of image batch jobs')
 
+    '''
     parser.add_argument('-f',
                         '--file',
                         type=str,
@@ -31,6 +32,7 @@ def get_args():
                         help='Enter the relative location of the directory',
                         required=False
                         )
+    '''
 
     parser.add_argument('-r',
                         '--resize',
@@ -48,16 +50,16 @@ def get_args():
                         )
 
     args = parser.parse_args()
-    file = args.file
-    dir = args.dir
+    # file = args.file
+    # dir = args.dir
     new_size = args.resize
     new_quality = args.quality
-    return file, dir, new_size, new_quality
-
+    # return file, dir, new_size, new_quality
+    return new_size, new_quality
 
 def batch():
-    file, dir, new_size, new_quality = get_args()
-
+    # file, dir, new_size, new_quality = get_args()
+    new_size, new_quality = get_args()
     image_resize.batch_main(size=new_size, quality=new_quality)
 
 
