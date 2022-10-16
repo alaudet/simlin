@@ -53,7 +53,7 @@ def list_images():
 
 def make_dest_dir():
     '''Iterate through the list and resize images as per user specification'''
-    # os.chdir(location)
+    
     resize_folder = 'resized'
     if os.path.isdir(resize_folder):
         print('{} folder already exists'.format(resize_folder))
@@ -66,16 +66,17 @@ def make_dest_dir():
 
 def resize_images(pics, new_size, quality=None):
     '''Resize images and put them in the destination directory'''
+    
     images = pics
     destination = make_dest_dir()
     i = 1
     numpics = len(images)
     if quality is None:
-        img_quality = int(input('Select an image quality>: '))
+        img_quality = int(input('Image Quality - 95 is Highest>: '))
+    
     else:
         img_quality = int(quality)
 
-        # img_quality = quality
     for image in images:
         image_object = Image.open(image)
         new_width = int(new_size)
@@ -96,7 +97,7 @@ def resize_images(pics, new_size, quality=None):
          )
 
 
-def batch_main(size=None, quality=None, file=None, dir=None):
+def batch_main(size=None, quality=None):
     '''Prepare information for processing'''
 
     flat_list = list_images()
@@ -104,7 +105,6 @@ def batch_main(size=None, quality=None, file=None, dir=None):
         print("No Image Files to Resize in this folder")
         print("Good Bye")
     new_size = str(size)
-    # print(type(new_size))
     resize_images(flat_list, new_size, quality)
 
 

@@ -1,6 +1,7 @@
 Changelog
 =========
 
+v0.0.6 - add "-v --version" to cmd line switches
 v0.0.5 - removed cmd line options until they are ready
 v0.0.4 - make simlin a wheel package
 v0.0.1 - puts resized images in the resized subfolder
